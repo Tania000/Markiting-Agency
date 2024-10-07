@@ -1,0 +1,563 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+
+}
+
+body {
+    Font-size: 18px;
+    background-image: url(images/Background-image\ .png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 1px solid red;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    font-family: barlow;
+    color: rgb(107, 91, 91);
+    font-weight: 600;
+}
+
+/*Header*/
+header {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 100px;
+    margin-bottom: 100px;
+}
+
+header .logo img {
+    width: 200px;
+
+}
+
+header nav ul {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+}
+
+header nav ul li a {
+    margin-left: 100px;
+    font-family: fraunces;
+    font-size: 20px;
+    font-weight: 700;
+    color: rgb(73, 71, 71);
+}
+
+.active a {
+    color: #fe7867;
+}
+
+/*Hero Section*/
+.hero-section {
+    width: 80%;
+    margin: 50px auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px;
+    gap: 50px;
+    background-color: #fe796719;
+    border-radius: 20px;
+}
+
+.hero-section:hover {
+    background-image: linear-gradient(to right, #fcebe9 50%, #E7BBB6);
+}
+
+.hero-section .left h1 {
+    font-family: Fraunces;
+    letter-spacing: 0.5px;
+    text-transform: capitalize;
+    font-size: 45px;
+    margin-bottom: 40px;
+}
+
+.hero-section .left h1 span {
+    color: #ef5e41;
+}
+
+.hero-section .left p {
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+.hero-section .left a {
+    display: inline-block;
+    font-size: 30px;
+    font-family: fraunces;
+    padding: 15px 25px;
+    margin: 50px auto;
+    cursor: pointer;
+    background-color: #ef5e41;
+    border-radius: 30px;
+    border: none;
+    color: #fff;
+}
+
+.hero-section .left a:hover {
+    background-color: transparent;
+}
+
+.hero-section .left a:hover {
+    color: #ef5e41;
+}
+
+/*Servic Section*/
+.servic-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 100px 0;
+    padding: 0 50px;
+}
+
+.servic-section .servic-section-text h1 {
+    color: #fe7867;
+    font-family: fraunces;
+    font-size: 50px;
+    font-weight: 900;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.servic-section .servic-section-text p {
+    width: 80%;
+    margin: 40px auto;
+    text-align: center;
+}
+
+.servic-section .box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 1100px;
+    margin-top: 30px;
+    gap: 20px;
+}
+
+.servic-section .box .cell {
+    width: 320px;
+    height: 230px;
+    padding: 10px 15px;
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0px 15px 20px #E7BBB6;
+    background-color: #ef5e4100;
+}
+
+.servic-section .box .cell h2 {
+    font-size: 22px;
+    font-family: fraunces;
+}
+
+.servic-section .box .cell i {
+    color: #ba381e;
+    font-size: 30px;
+}
+
+.servic-section .box .cell:hover {
+    background-image: linear-gradient(to right, #e7bbb6, #e07a6de3), url(images/Servic-section.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.servic-section .box .cell:hover h2 {
+    color: whitesmoke;
+    font-size: 21px;
+    font-weight: 900;
+
+}
+
+.servic-section .box .cell:hover i,
+.cell:hover p {
+    color: whitesmoke;
+}
+
+/*Contact Section*/
+.contact-section {
+    width: 100%;
+    margin: 100px 0;
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fe79676f;
+}
+
+.contact-section .container {
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    box-shadow: 0 0 20px 10px #ba381e;
+    overflow: hidden;
+}
+
+.contact-section .container .contact {
+    width: 100%;
+    padding: 40px;
+    background-color: #fff;
+}
+
+.contact-section .container .contact h2 {
+    font-family: fraunces;
+    font-weight: 900;
+    font-size: 4em;
+    margin-bottom: 50px;
+}
+
+.contact-section .container .contact img {
+    width: 400px;
+}
+
+.contact-section .container form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    padding: 25px;
+}
+
+.contact-section .container form input,
+.contact-section .container form textarea {
+    padding: 10px 20px;
+    margin-bottom: 15px;
+    background-color: transparent;
+    border: 2px solid #fff;
+    border-radius: 30px;
+    outline: none;
+    resize: none;
+}
+
+.contact-section .container form input:focus,
+.contact-section .container form textarea:focus {
+    background-color: #fff;
+}
+
+.contact-section .container form button {
+    font-family: barlow;
+    font-size: 20px;
+    font-weight: 700;
+    border-radius: 30px;
+    border: none;
+    height: 50px;
+    cursor: pointer;
+    background-color: #fff;
+    color: #BA381E;
+    margin-top: 20px;
+}
+
+/*Footer*/
+footer {
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+
+}
+
+footer p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+footer .icons {
+    background-color: #ef5e41;
+    border-radius: 100% 0%;
+}
+
+footer .icons a {
+    font-size: 25px;
+    color: #fff;
+    padding: 15px;
+    margin: 0 20px;
+    display: inline-flex;
+    border-radius: 50%;
+    background-color: #fe7967;
+}
+
+p:last-child {
+    margin-top: 20px;
+}
+
+@media (min-width:1201px) and (max-width:1500px) {
+    .contact-section .container .contact h2 {
+        font-size: 65px;
+    }
+
+    .contact-section .container .contact img {
+        width: 300px;
+    }
+
+}
+
+@media (min-width:801px)and (max-width:1200px) {
+
+
+    header {
+        padding: 50px 30px;
+        margin-bottom: 50px;
+    }
+
+    header nav ul li a {
+        font-size: 18px;
+        margin-left: 30px;
+    }
+
+    header .logo img {
+        width: 130px;
+    }
+
+
+
+    .hero-section {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 50px;
+        gap: 20px;
+    }
+
+    .hero-section .left {
+        text-align: center;
+    }
+
+    .hero-section .left h1 {
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+
+    .hero-section .left p {
+        color: black;
+        line-height: 1.5;
+        font-size: 18px;
+    }
+
+    .hero-section .left a {
+        font-size: 25px;
+    }
+
+    .hero-section:hover {
+        background-image: linear-gradient(to bottom, #fcebe9, #E7BBB6);
+    }
+
+
+
+    .servic-section {
+        margin: 50px 0;
+        padding: 20px;
+    }
+
+    .servic-section .servic-section-text h1 {
+        font-size: 35px;
+    }
+
+    .servic-section .servic-section-text p {
+        width: 100%;
+        padding: 10px;
+        margin: 0px;
+    }
+
+    .servic-section .box {
+        justify-content: space-evenly;
+        width: 100%;
+    }
+
+
+    .contact-section {
+        margin: 50px 0;
+        padding: 50px 20px;
+    }
+
+    .contact-section .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 80%;
+        padding: 50px 30px;
+    }
+
+    .contact-section .container .contact {
+        border-radius: 10px 40px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .contact-section .container .contact h2 {
+        font-size: 40px;
+        text-align: center;
+        margin-bottom: 0;
+    }
+
+    .contact-section .container .contact img {
+        width: 200px;
+    }
+
+    .contact-section .container form {
+        padding: 50px;
+        width: 80%;
+    }
+}
+
+
+@media (min-width:800px)and (max-width:1200px) {
+
+
+    header {
+        padding: 50px 30px;
+        margin-bottom: 50px;
+    }
+
+    header nav ul li a {
+        font-size: 18px;
+        margin-left: 30px;
+    }
+
+    header .logo img {
+        width: 130px;
+    }
+
+
+
+    .hero-section {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 50px;
+        gap: 20px;
+    }
+
+    .hero-section .left {
+        text-align: center;
+    }
+
+    .hero-section .left h1 {
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+
+    .hero-section .left p {
+        color: black;
+        line-height: 1.5;
+        font-size: 18px;
+    }
+
+    .hero-section .left a {
+        font-size: 25px;
+    }
+
+    .hero-section:hover {
+        background-image: linear-gradient(to bottom, #fcebe9, #E7BBB6);
+    }
+
+    .hero-section .right {
+        display: flex;
+    }
+
+    .hero-section .right img {
+        width: 300px;
+        flex-grow: 1;
+    }
+
+
+
+    .servic-section {
+        margin: 50px 0;
+        padding: 20px;
+    }
+
+    .servic-section .servic-section-text h1 {
+        font-size: 35px;
+    }
+
+    .servic-section .servic-section-text p {
+        width: 100%;
+        padding: 10px;
+        margin: 0px;
+    }
+
+    .servic-section .box {
+
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        padding: 0 50px;
+    }
+
+    .servic-section .box .cell {
+        width: 100%;
+        background-color: #ECD3D1;
+    }
+
+
+    .contact-section {
+        margin: 50px 0;
+        padding: 50px 20px;
+    }
+
+    .contact-section .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 80%;
+        padding: 50px 30px;
+    }
+
+    .contact-section .container .contact {
+        border-radius: 10px 40px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .contact-section .container .contact h2 {
+        font-size: 40px;
+        text-align: center;
+        margin-bottom: 0;
+    }
+
+    .contact-section .container .contact img {
+        width: 200px;
+    }
+
+    .contact-section .container form {
+        padding: 50px;
+    }
+}
